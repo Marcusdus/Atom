@@ -8,3 +8,12 @@ DELETE FROM Users WHERE email='ted@unich.edu'  # deleting raw in table called Us
 UPDATE Users SET name='charles' WHERE email='csev@umich.edu'  # allows the update on specific columm and raw.
 SELECT * FROM Users WHERE email='dush@gmail.com' retrieve data from table on specific columm.
 SELECT * FROM Users order by name
+
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES('Katherine', 29);  # insert new attribute in the table.
+INSERT INTO Ages (name, age) VALUES('Sukhpal', 39);
+INSERT INTO Ages (name, age) VALUES('Sakina', 14);
+INSERT INTO Ages (name, age) VALUES('Samiha', 22);
+
+SELECT hex(name || age) AS X FROM Ages ORDER BY X
