@@ -1,0 +1,10 @@
+CREATE TABLE Users( # creating table
+name VARCHAR(128),  # creating columm called name
+email VARCHAR(128)  # creating columm called email
+)
+
+INSERT INTO Users (name,email) Values ('Kristin', 'Kf@umich.edu') # adding new raw on table called Users
+DELETE FROM Users WHERE email='ted@unich.edu'  # deleting raw in table called Users.
+UPDATE Users SET name='charles' WHERE email='csev@umich.edu'  # allows the update on specific columm and raw.
+SELECT * FROM Users WHERE email='dush@gmail.com' retrieve data from table on specific columm.
+SELECT * FROM Users order by name
