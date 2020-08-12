@@ -1,0 +1,34 @@
+CREATE TABLE Users( # creating table
+name VARCHAR(128),  # creating columm called name
+email VARCHAR(128)  # creating columm called email
+)
+
+INSERT INTO Users (name,email) Values ('Kristin', 'Kf@umich.edu') # adding new raw on table called Users
+DELETE FROM Users WHERE email='ted@unich.edu'  # deleting raw in table called Users.
+UPDATE Users SET name='charles' WHERE email='csev@umich.edu'  # allows the update on specific columm and raw.
+SELECT * FROM Users WHERE email='dush@gmail.com' retrieve data from table on specific columm.
+SELECT * FROM Users order by name
+
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES('Katherine', 29);  # insert new attribute in the table.
+INSERT INTO Ages (name, age) VALUES('Sukhpal', 39);
+INSERT INTO Ages (name, age) VALUES('Sakina', 14);
+INSERT INTO Ages (name, age) VALUES('Samiha', 22);
+
+SELECT hex(name || age) AS X FROM Ages ORDER BY X
+
+
+INSERT INTO Track(title, rating, len, count, album_id, genre_id) VALUES('Black Dog', 5, 297, 0, 2, 1);
+INSERT INTO Track(title, rating, len, count, album_id, genre_id) VALUES('Stairway', 5, 482, 0, 2, 1);
+INSERT INTO Track(title, rating, len, count, album_id, genre_id) VALUES('About to Rock', 5, 297, 0, 2, 1);
+INSERT INTO Track(title, rating, len, count, album_id, genre_id) VALUES('Who made Who', 5, 297, 0, 2, 1);
+
+CREATE TABLE Artist(
+id INTEGER,
+name TEXT
+)
+
+SELECT Album.title,Artist.name FROM Album JOIN Artist ON Album.artist_id = Artist.id  # Select 'what we want', 'The table that hold the data', 'How the tables are linked'
+SELECT Track.title,Genre.name FROM Track JOIN Genre ON Track.genre_id = Genre.id
+SELECT Track.title, Artist.name, Album.title,Genre.name FROM Track JOIN Genre JOIN Album JOIN Artist ON Track.genre_id = Genre.id AND Track.Album_id = Album_id AND Album.artist_id = Artist.id;  #  complex selection.
