@@ -28,3 +28,5 @@ University of Michigan
 Course link :https://www.coursera.org/specializations/python
 
 Drive docs :https://docs.google.com/document/d/1qssvAWgy3ON7tUF6bSZyFOV6YoOvyWq522ucJ58IVNU/edit
+
+![assignment 45](https://user-images.githubusercontent.com/63025671/101814520-f3340200-3b26-11eb-8591-d14a7750f437.jpeg)
