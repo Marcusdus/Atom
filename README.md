@@ -1,4 +1,6 @@
-# Atom
+# Python specialisation for everybody & capston project 1
+
+
 Python specialisation for every body(coursera)
 
 This Specialization builds on the success of the Python for Everybody course and will introduce fundamental programming concepts including data structures, 
